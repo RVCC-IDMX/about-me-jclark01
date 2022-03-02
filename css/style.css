@@ -30,9 +30,10 @@ header {
     text-align: center;
 }
 
-#myhobbies ul {
+#myhobbies ul, #possessions {
     text-align: center;
     list-style-position: inside;
 }
+
 
 /*gallery*/
