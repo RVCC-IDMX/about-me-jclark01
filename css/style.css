@@ -32,5 +32,6 @@ header {
 
 #myhobbies ul {
     text-align: center;
+    list-style-position: inside;
 
 }
