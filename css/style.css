@@ -46,3 +46,7 @@ header {
 #gallery {
     border: 2px solid;
 }
+
+#gallery img {
+    max-width: 100%;
+}
