@@ -36,9 +36,18 @@ header {
 
 /* hobbies/possessions */
 
-#myhobbies ul, #possessions {
-    text-align: center;
-    list-style-position: inside;
+#myhobbies, #possessions {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    /*text-align: center;
+    list-style-position: inside;*/
+}
+
+#myhobbies ul, #possessions ul {
+    /*padding: 1rem;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 5px;*/
 }
 
 /*gallery*/
@@ -53,4 +62,41 @@ header {
 
 #gallery figure {
     text-align: center;
+}
+
+/* Drop Caps*/
+
+article p::first-letter {
+    font-size: 400%;
+    border: 1px solid black;
+    padding-left:.3ex;
+    padding-right:.3ex;
+    float: left;
+    margin:.3ex;
+
+    color: black;
+    background-color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+figcaption {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+/*tablet State*/
+@media screen and (min-width: 960px){
+    
+    /*body {
+        border: 0px;
+        margin: ;
+    }*/
 }
