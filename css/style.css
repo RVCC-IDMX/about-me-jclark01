@@ -50,3 +50,7 @@ header {
 #gallery img {
     max-width: 100%;
 }
+
+#gallery figure {
+    text-align: center;
+}
