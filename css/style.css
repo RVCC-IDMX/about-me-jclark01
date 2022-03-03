@@ -14,6 +14,8 @@ header {
     text-align: center;
 }
 
+/* hero */
+
 #hero, footer {
     background-color: #afafaf;
     border: 2px solid #3631F0;
@@ -26,14 +28,21 @@ header {
     width: 250px;
 }
 
+/* bio */
+
 #bio {
     text-align: center;
 }
+
+/* hobbies/possessions */
 
 #myhobbies ul, #possessions {
     text-align: center;
     list-style-position: inside;
 }
 
-
 /*gallery*/
+
+#gallery {
+    border: 2px solid;
+}
