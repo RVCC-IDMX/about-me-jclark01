@@ -58,6 +58,9 @@ header {
 
 #gallery img {
     max-width: 100%;
+    width: 640px;
+    padding: 0px;
+    box-shadow: 4px 4px 4px gray;
 }
 
 #gallery figure {
