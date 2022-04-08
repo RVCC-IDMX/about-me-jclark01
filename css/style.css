@@ -46,12 +46,6 @@ header {
     list-style-position: inside;*/
 }
 
-/* #myhobbies ul, #possessions ul {
-    padding: 1rem;
-    box-shadow: 3px 3px 10px black;
-    border-radius: 5px;
-} */
-
 /*gallery*/
 
 #gallery {
@@ -153,10 +147,4 @@ legend {
 }
 
 /*tablet State*/
-@media screen and (min-width: 960px){
-    
-    /*body {
-        border: 0px;
-        margin: ;
-    }*/
-}
+@media screen and (min-width: 960px){}
