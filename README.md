@@ -12,7 +12,7 @@ When picking the color scheme for the site, I kept in mind that some people may 
 
 ![Webpage with color scheme](img/page-with-color-scheme.jpg)
 
-Citations
+Citations:
 https://www.w3schools.com, https://color.adobe.com, http://fonts.google.com
 
 ©2022 James Clark
