@@ -72,7 +72,7 @@ header {
 
 /* Drop Caps*/
 
-article p::first-letter {
+article p:first-child::first-letter {
     font-size: 400%;
     border: 1px solid black;
     padding-left:.3ex;
@@ -84,6 +84,15 @@ article p::first-letter {
     color: black;
     background-color: azure;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article p {
+    clear:both;
+}
+
+#article div {
+    max-width:100%;
+    columns: 30rem;
 }
 
 figure {
@@ -152,6 +161,8 @@ legend {
     border-radius: 10px;
 }
 
+
+
 /*tablet State*/
 /* @media screen and (min-width: 960px){} */
 
@@ -176,5 +187,4 @@ legend {
     figure{
         display: block;
     }
-
 }
