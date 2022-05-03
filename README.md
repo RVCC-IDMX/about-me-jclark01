@@ -15,7 +15,7 @@ When picking the color scheme for the site, I kept in mind that some people may 
 Citations and References:<br>
 https://color.adobe.com (used to create color scheme),<br> 
 http://fonts.google.com,<br>
-https://www.w3schools.com (used for most off my HTML and CSS references), 
+https://www.w3schools.com (used for most off my HTML, CSS references, and demo), 
 
 ![Logo](img/jc-logo.svg)
 

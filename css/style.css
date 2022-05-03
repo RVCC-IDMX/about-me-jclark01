@@ -128,20 +128,22 @@ article p {
 
     /* upside down state */
     transform: rotate(180deg);
+
+        /* grayscale */
+	filter: grayscale(80%);
+	transition: .8s ease-in-out;
 }
 
 #demo figure {
     text-align: center;
     
-    /* grayscale */
-	filter: grayscale(80%);
-	transition: .8s ease-in-out;
+
 }
 
-#demo figure:hover {
+#demo img:hover {
     transition-duration: .8s;
 
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 
     filter: grayscale(0);
 } 
