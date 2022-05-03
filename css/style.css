@@ -16,7 +16,6 @@ header {
     text-align: center;
 }
 
-
 /* Hero */
 
 #hero, footer {
@@ -72,8 +71,7 @@ header {
 }
 
 #gallery figure:hover {
-    transform: translate(0px, 0px);
-    transform: scale(1.25);
+    transform: scale(1.10);
     transition-duration: .8s;
 } 
 
@@ -89,22 +87,25 @@ figcaption {
 
 #video iframe {
     max-width: 100%;
+    box-shadow: 4px 4px 4px gray;
 }
 
 /* Article */
 
 article p:first-child::first-letter {
     font-size: 400%;
-    border: 1px solid black;
+    border: 1px solid #3631F0;
+    background-color: #cecece;
+    box-shadow: 1px 1px 1px gray;
     padding-left:.3ex;
     padding-right:.3ex;
     float: left;
-    margin:.3ex;
+    margin:.2ex;
     border-radius: 10px;
 
-    color: black;
-    background-color: azure;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3631F0;
+    /* background-color: azure; */
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 article p {
@@ -115,6 +116,34 @@ article p {
     max-width:100%;
     columns: 30rem;
 }
+
+/* Demo */
+
+#demo img {
+    max-width: 100%;
+    width: 500px;
+    padding: 0px;
+    box-shadow: 4px 4px 4px gray;
+
+    /* upside down state */
+    transform: rotate(180deg);
+}
+
+#demo figure {
+    text-align: center;
+    
+    /* grayscale */
+	filter: grayscale(80%);
+	transition: .8s ease-in-out;
+}
+
+#demo figure:hover {
+    transition-duration: .8s;
+
+    transform: rotate(180deg);
+
+    filter: grayscale(0);
+} 
 
 /* Contact Form */
 
@@ -172,6 +201,7 @@ legend {
 /* Tablet State */
 
 @media screen and (min-width: 960px){
+
     #gallery{
         display: block;
     }  
@@ -186,13 +216,13 @@ legend {
 
 @media screen and (min-width: 80em) {
 
+    hr{
+        display: none;
+    }
+    
     #gallery {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    hr{
-        display: none;
     }
 
     #gallery h2 {

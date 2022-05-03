@@ -1,3 +1,10 @@
+/* hamburger menu */
+
+.menu img {
+    max-width: 10%;
+    background-color: white;
+}
+
 /* make scrolling smooth */
 
 html {
@@ -96,4 +103,3 @@ such that no text wraps
         justify-content: space-between;
     }
 } 
-
