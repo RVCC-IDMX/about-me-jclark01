@@ -14,8 +14,14 @@ When picking the color scheme for the site, I kept in mind that some people may 
 
 Citations and References:<br>
 https://color.adobe.com (used to create color scheme),<br> 
-http://fonts.google.com,<br>
-https://www.w3schools.com (used for most off my HTML, CSS references, and demo), 
+http://fonts.google.com (used to add fonts) <br>
+https://www.w3schools.com (used for most off my HTML, CSS references, and demo),<br>
+Links used for demo<br>
+https://www.w3schools.com/cssref/css3_pr_transform.asp<br>
+https://www.w3schools.com/css/css_image_transparency.asp<br>
+https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp<br>
+https://www.w3schools.com/cssref/css3_pr_transition-duration.asp<br>
+https://codepen.io/nxworld/pen/ZYNOBZ<br>
 
 ![Logo](img/jc-logo.svg)
 
