@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto:wght@300&display=swap" 
+    rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
@@ -22,9 +23,17 @@
     <nav class="navbar">
         <div class="logo">
             <!-- the logo for a page -->
-            <img src="./img/logo-96X96.svg" alt="Blue Orgami Bird">
+            <img src="./img/jc-logo.svg" alt="jc-logo">
             <h1>Web Dev 1</h1>
         </div>
+        
+        <nav class="menu">
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox">   
+        <label for="nav-checkbox" class="nav-toggle">
+            <img id="hamburger" src="./img/menu-outline.svg" alt="menu">
+            <img id="close" src="./img/close-outline.svg" alt="close">
+        </label>
+
         <div class="navbar-links">
         <ul>
             <li><a href="#bio">Bio</a></li>
@@ -36,6 +45,9 @@
     </nav>
 </header>
 
+<!-- <ion-icon name="menu-outline"></ion-icon> 
+<ion-icon name="close-outline"></ion-icon> --> 
+
 <main>
     
     <!-- main content of page -->
@@ -43,7 +55,7 @@
     <section id="hero">
 
         <!-- the hero -->
-        <img src="./img/avataaars.svg" alt="My Avatar">
+        <img src="./img/selfie-1-640w.jpg" alt="My Avatar">
         <div>
             <p>James Clark</p>
             <p>Long Hill Township</p>
@@ -57,42 +69,32 @@
     
     <div>
 
-        <p>I want it to be sunny tommorow...</p>
-
-        <p>and also hope to continue to learn more HTML code.</p>
+        <p>Hello, I’m James. I have been a student at Raritan Valley Community College since 2019. Previously, 
+            I took a computer literacy class where I learned the basics of computer hardware and software 
+            (specifically Microsoft PowerPoint, Word, Excel). As of writing, I’m currently unsure if a want to obtain 
+            an IT certificate or pursue a certificate outside of the IT department. In the summer, I like to attend 
+            car shows and enjoy the outdoors.</p>
 
     </div>
     
     </section>
 
-<!-- LISTS -->
 
     <section id="myhobbies">
 
         <h2>My Hobbies</h2>
 
-        <ul>
-            <li>old computers and video games</li>
-            <li>old vehicles (including my Humvee)</li>
-            <li>home improvment</li>
-        </ul>
+        <p>My main hobbies include collecting old computers and video games and home improvement. 
+            Some unique Apple computers I have include an Apple IIc, Macintosh SE, iMac G3, iMac G5, and an eMac. 
+            I also have an old Compaq laptop running Windows 98, a Dell laptop with Windows XP, and even an old 
+            ThinkPad with a Chinese keyboard layout. In my spare time, I especially like to mess around with old 
+            computer software and settings. Primarily intended for old versions of Windows. For video game consoles 
+            I have an Atari 2600, Gameboy, Super Nintendo, Sega Genesis, Dreamcast, PlayStation, PlayStation 2, and 
+            an original Xbox. As far as home improvement goes, I renovated two bathrooms, revamped my laundry room, 
+            had a gas line connected to the house, and added lights in the downstairs family room. All of that was 
+            done around my house throughout the past six years.</p>
         
-    </section>
-
-    <section id="possessions">
-
-        <h2>Some Unique Possessions</h2>
-
-        <ul>
-            <li>Apple iic</li>
-            <li>Macintosh SE</li>
-            <li>iMac G3</li>
-            <li>iMac G5 (as seen below)</li>
-            <li>Atari 2600</li>
-            <li>Game Boy</li>
-        </ul>
-        
-    </section>
+    </section><br>
 
     <section id="gallery">
 
@@ -102,7 +104,7 @@
 
 <figure>
     <img src="./img/imac-640w.jpg" alt="iMac G5">
-    <figcaption>The iMac I bought at a yard sale.</figcaption>
+    <figcaption>The iMac G5 I bought at a yard sale.</figcaption>
 </figure>
 
 <hr>
@@ -134,34 +136,73 @@
 
     </section>
 
+    <article id="article">
 
-<article id="article">
+    <h2>Blog: Image Hover Effects</h2>
 
-    <br><br><h2>Dracula</h2>
+<div>
+    
+<p>
+    Image hover effects are transitions that can be added to an image which a user can interact with when hovered 
+    over. This works by adding ‘:hover’ to the selector you want to apply the effect to. For example, I applied the 
+    property ‘transform: scale’ to the pictures in the Photo Gallery section on this web page which makes the pictures 
+    larger once hovered over. I set the scale ‘(1.10)’ which tells how big the image is supposed to enlarge. 
+    Adding this property alone does not make the image smoothly transition which is where ‘transition-duration’ 
+    comes in. Adding the ‘transition-duration’ property not only will make image transition smoothly but also lets 
+    you set how long it will take for it to complete. I set the property to ‘.8s’ for the three pictures.
+</p>
 
-    <div>
-        <p>We then waited whilst Lucy made her toilet for the night, and when she was in bed he came and himself fixed the wreath of garlic round her neck. The last words he said to her were:--</p>
+<p>
+    Initially, I had some problems adding the hover transition effect to the pictures. First, I added the selector 
+    ‘#gallery :hover’ into my CSS. Then, I added ‘transform: scale’ and ‘transition-duration’ properties under 
+    ‘#gallery :hover’. The effect was applied to both the pictures and fig captions, but the fig captions would not 
+    scale with picture that the cursor was hovering over. Also, the pictures would become too big once hovered over 
+    which would be distracting to visitors. Not to mention, the ‘transition-duration’ effect worked when hovering 
+    over, but snaped back into place when hovering off the picture.
+</p>
 
-<br><br><p>"Take care you do not disturb it; and even if the room feel close, do not to-night open the window or the door."</p>
+<p>
+    To resolve the issues, I changed the selector to ‘gallery figure:hover’, which fixed the issue with fig captions 
+    not scaling with the pictures. I then changed the ‘transformation: scale’ setting from ‘(2)’ to ‘(1.10)’ which 
+    makes the pictures not scale too big. Lastly, I added ‘transition-duration’ to ‘#gallery figure’ so that the 
+    pictures scale back into place when hovered off.
+</p>
+    
+<p>
+    In the demo below, I applied the properties ‘transform: rotate’, ‘filter: grayscale’, and ‘opacity’ to the 
+    picture when it’s not hovered over. To make the picture upside down, I set ‘transform: rotate’ to ‘(180deg)’ 
+    which tells what angle it needs to be positioned at. To make the picture somewhat black and white, I set 
+    ‘filter: grayscale’ to ‘(80%)’. And finally, I set ‘opacity’ to ‘44%’ which tell the picture how transparent 
+    it’s supposed to appear. I also added ease-in-out to ‘transition-duration: .8s’ which makes it start and end a 
+    little slower (it may be hard to notice). These properties are under the ‘#demo img’ as suppose to the 
+    ‘#demo img:hover’ selector. Otherwise, the picture would appear in its normal state when not hovered over.
+</p>
 
-<br><br><br><p>"I promise," said Lucy, "and thank you both a thousand times for all your kindness to me! Oh, what have I done to be blessed with such friends?"</p>
+<p>
+    For the picture to transition to its normal state when hovered over, I applied the reverse settings in 
+    ‘#demo img:hover’. I set both the ‘transform: rotate’ and ‘filter: grayscale’ both to 0, and the ‘opacity’ to 
+    100. The ‘transition-duration’ property uses in the same settings as used in ‘#demo img’. If you were to not 
+    include the reverse properties, hovering over the picture would not affect it at all.
+</p>
 
-<br><br><br><p>As we left the house in my fly, which was waiting, Van Helsing said:--</p>
+<p>
+    Much like how I had problems getting the photo gallery to work properly, I also had some problem with the demo. 
+    For example, my picture would transition when hovering close to the image instead of only transitioning on it. 
+    Overall, CSS can be very finicky. But when it works, its guaranteed to satisfy you as a coder. 
+</p>
 
-<br><br><br><p>"To-night I can sleep in peace, and sleep I want--two nights of travel, much reading in the day between, and much anxiety on the day to follow, and a night to sit up, without to wink. To-morrow in the morning early you call for me, and we come together to see our pretty miss, so much more strong for my 'spell' which I have work. Ho! ho!"</p>
+</div>
 
-<br><p>He seemed so confident that I, remembering my own confidence two nights before and with the baneful result, felt awe and vague terror. It must have been my weakness that made me hesitate to tell it to my friend, but I felt it all the more, like unshed tears. 12 September.--How good they all are to me. I quite love that dear Dr. Van Helsing. I wonder why he was so anxious about these flowers. He positively frightened me, he was so fierce. And yet he must have been right, for I feel comfort from them already. Somehow, I do not dread being alone to-night, and I can go to sleep without fear. I shall not mind any flapping outside the window. Oh, the terrible struggle that I have had against sleep so often of late; the pain of the sleeplessness, or the pain of the fear of sleep, with such unknown horrors as it has for me! How blessed are some people, whose lives have no fears, no dreads; to whom sleep is a blessing that comes nightly, and brings nothing but sweet dreams. Well, here I am to-night, hoping for sleep, and lying like Ophelia in the play, with "virgin crants and maiden strewments." I never liked garlic before, but to-night it is delightful! There is peace in its smell; I feel sleep coming already. Good-night, everybody. 13 September.--Called at the Berkeley and found Van Helsing, as usual, up to time. The carriage ordered from the hotel was waiting. The Professor took his bag, which he always brings with him now.</p>
+    </article>
 
-<br><p>Let all be put down exactly. Van Helsing and I arrived at Hillingham at eight o'clock. It was a lovely morning; the bright sunshine and all the fresh feeling of early autumn seemed like the completion of nature's annual work. The leaves were turning to all kinds of beautiful colours, but had not yet begun to drop from the trees. When we entered we met Mrs. Westenra coming out of the morning room. She is always an early riser. She greeted us warmly and said:--</p>
+    <section id="demo">
+        <h2>Demo</h2>
+        <figure>
+            <img src="./img/emac-640w.jpg" alt="eMac">
+        </figure>
+    </section>
 
-<br><p>"You will be glad to know that Lucy is better. The dear child is still asleep. I looked into her room and saw her, but did not go in, lest I should disturb her." The Professor smiled, and looked quite jubilant. He rubbed his hands together, and said:--</p>
-
-<br><br><p>"Aha! I thought I had diagnosed the case. My treatment is working," to which she answered:--</p>
-    </div>
-
-</article>
-
-<br><br><section id="contact">
+    <section id="contact">
 
     <h2>Reach out to me</h2>
 
@@ -216,12 +257,13 @@
 
     </form>
 
-</section>
+    </section>
 
 </main>
 
 <footer>
-    ©2022 - James Clark
+    <a href="https://github.com/RVCC-IDMX/about-me-jclark01">GitHub Repo</a>
+    <p>©2022 - James Clark</p>
 </footer>
 
 </body></html>
